@@ -2,6 +2,12 @@ import sklearn
 
 import mlflow
 
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://34.213.211.223:80")
+
+# Define the experiment name
+mlflow.set_experiment('sklearn')
+
 # Use explicit model logging to control the conda environment and pip requirements
 mlflow.sklearn.autolog(log_models=False)
 

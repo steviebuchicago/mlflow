@@ -1,0 +1,37 @@
+{
+  "system": {
+    "package_version": "1.2.0",
+    "script": "export_models.py",
+    "export_time": 1699664748,
+    "_export_time": "2023-11-11 01:05:48",
+    "mlflow_version": "2.8.0",
+    "mlflow_tracking_uri": "http://34.213.211.223:80",
+    "platform": {
+      "python_version": "3.11.5",
+      "system": "Windows",
+      "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+    },
+    "user": "sbarr"
+  },
+  "info": {
+    "model_names": [
+      "ElasticnetWineModel"
+    ],
+    "stages": "Production,Staging,Archived,None",
+    "export_run": false,
+    "export_latest_versions": false,
+    "notebook_formats": "",
+    "use_threads": false,
+    "output_dir": "./output-ml\\models",
+    "num_total_models": 1,
+    "num_ok_models": 0,
+    "num_failed_models": 1,
+    "duration": 0.3,
+    "failed_models": [
+      "ElasticnetWineModel"
+    ]
+  },
+  "mlflow": {
+    "models": []
+  }
+}

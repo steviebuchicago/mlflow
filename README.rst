@@ -126,9 +126,9 @@ Running a Project from a URI
 The ``mlflow run`` command lets you run a project packaged with a MLproject file from a local path
 or a Git URI::
 
-    mlflow run examples/sklearn_elasticnet_wine -P alpha=0.4
+    C:\Users\sbarr\Downloads\C-Thru\mlflow-export-import\Scripts\mlflow run examples/sklearn_elasticnet_wine -P alpha=0.4
 
-    mlflow run https://github.com/mlflow/mlflow-example.git -P alpha=0.4
+    C:\Users\sbarr\Downloads\C-Thru\mlflow-export-import\Scripts\mlflow run https://github.com/mlflow/mlflow-example.git -P alpha=0.4
 
 See ``examples/sklearn_elasticnet_wine`` for a sample project with an MLproject file.
 

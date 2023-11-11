@@ -8,6 +8,12 @@ from prophet.diagnostics import cross_validation, performance_metrics
 import mlflow
 from mlflow.models import infer_signature
 
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://localhost:5000")
+
+# Define the experiment name
+mlflow.set_experiment('prophet')
+
 SOURCE_DATA = (
     "https://raw.githubusercontent.com/facebook/prophet/master/examples/example_retail_sales.csv"
 )

@@ -1,0 +1,34 @@
+{
+  "system": {
+    "package_version": "1.2.0",
+    "script": "export_experiments.py",
+    "export_time": 1699665290,
+    "_export_time": "2023-11-11 01:14:50",
+    "mlflow_version": "2.8.0",
+    "mlflow_tracking_uri": "http://34.213.211.223:80",
+    "platform": {
+      "python_version": "3.11.5",
+      "system": "Windows",
+      "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+    },
+    "user": "sbarr"
+  },
+  "info": {
+    "duration": 0.5,
+    "experiments": 1,
+    "total_runs": 1,
+    "ok_runs": 1,
+    "failed_runs": 0
+  },
+  "mlflow": {
+    "experiments": [
+      {
+        "id": "1",
+        "name": "sklearn",
+        "ok_runs": 1,
+        "failed_runs": 0,
+        "duration": 0.4
+      }
+    ]
+  }
+}

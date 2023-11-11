@@ -6,7 +6,12 @@ from sklearn.metrics import mean_squared_error
 
 import mlflow
 import mlflow.statsmodels
+    
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://localhost:5000")
 
+# Define the experiment name
+mlflow.set_experiment('statsmodels')
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Statsmodels example")

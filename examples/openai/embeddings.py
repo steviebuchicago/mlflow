@@ -7,6 +7,16 @@ import mlflow
 from mlflow.models.signature import ModelSignature
 from mlflow.types.schema import ColSpec, ParamSchema, ParamSpec, Schema, TensorSpec
 
+
+    
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://34.213.211.223:80")
+
+# Define the experiment name
+mlflow.set_experiment('openai')
+
+OPENAI_API_KEY= "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"
+
 assert "OPENAI_API_KEY" in os.environ, " OPENAI_API_KEY environment variable must be set"
 
 

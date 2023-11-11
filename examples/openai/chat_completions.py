@@ -10,11 +10,19 @@ from mlflow.types.schema import ColSpec, ParamSchema, ParamSpec, Schema
 
 logging.getLogger("mlflow").setLevel(logging.ERROR)
 
+    
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://34.213.211.223:80")
+
+
+# Define the experiment name
+mlflow.set_experiment('openai')
+
 # Uncomment the following lines to run this script without using a real OpenAI API key.
 # os.environ["MLFLOW_TESTING"] = "true"
 # os.environ["OPENAI_API_KEY"] = "test"
 
-assert "OPENAI_API_KEY" in os.environ, "Please set the OPENAI_API_KEY environment variable."
+assert "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" in os.environ, "Please set the OPENAI_API_KEY environment variable."
 
 
 print(

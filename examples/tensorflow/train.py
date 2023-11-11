@@ -5,6 +5,19 @@ from sklearn.datasets import fetch_california_housing
 import mlflow
 from mlflow.models import infer_signature
 
+    
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://localhost:5000")
+
+# Define the experiment name
+mlflow.set_experiment('sklearn')
+
+
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://localhost:5000")
+
+# Define the experiment name
+mlflow.set_experiment('tensorflow')
 
 class Normalize(tf.Module):
     """Data Normalization class"""

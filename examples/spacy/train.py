@@ -6,6 +6,13 @@ from spacy.util import compounding, minibatch
 
 import mlflow.spacy
 
+# Set the MLflow tracking URI to the local server
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://34.213.211.223:80")
+
+# Define the experiment name
+mlflow.set_experiment('spacy')
+
 IS_SPACY_VERSION_NEWER_THAN_OR_EQUAL_TO_3_0_0 = Version(spacy.__version__) >= Version("3.0.0")
 
 # training data

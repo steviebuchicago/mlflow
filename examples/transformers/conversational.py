@@ -2,6 +2,16 @@ import transformers
 
 import mlflow
 
+
+
+    
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://34.213.211.223:80")
+
+# Define the experiment name
+mlflow.set_experiment('llm')
+
+
 conversational_pipeline = transformers.pipeline(model="microsoft/DialoGPT-medium")
 
 signature = mlflow.models.infer_signature(

@@ -17,6 +17,12 @@ import mlflow
 import mlflow.sklearn
 from mlflow.models import infer_signature
 
+    
+# Set the MLflow tracking URI to the local server
+mlflow.set_tracking_uri("http://34.213.211.223:80")
+
+# Define the experiment name
+mlflow.set_experiment('sklearn')
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
